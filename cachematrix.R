@@ -40,12 +40,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-#---------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------
 # Function : cacheSolve
 
 # This function gets the inverse from cache if it is already computed.
-# If a new imput matrix is provided, the function calculates the inverse and stores 
-#   in cache
+# If a new imput matrix is provided, the function calculates the inverse and stores in cache
 
 cacheSolve <- function(x, ...) {
   # Access the inverse already in cache for the same input x
