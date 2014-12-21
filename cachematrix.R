@@ -6,10 +6,9 @@
 
 #---------------------------------------------------------------------
 # Function : makeCacheMatrix
-
-# This function creates a special "vector" (list), which is really a list of:
-#1. set the value of the vector
-#2. get the value of the vector
+# This function creates a special "matrix" object that can cache its inverse.
+#1. set the value of the matrix
+#2. get the value of the matrix
 #3. set the value of the inverse
 #4. get the value of the inverse
 
@@ -44,6 +43,7 @@ makeCacheMatrix <- function(x = matrix()) {
 # Function : cacheSolve
 
 # This function gets the inverse from cache if it is already computed.
+# If the inverse has already been calculated (and the matrix has not changed), then cacheSolve retrieves the inverse from the cache.
 # If a new imput matrix is provided, the function calculates the inverse and stores in cache
 
 cacheSolve <- function(x, ...) {
